@@ -1,0 +1,92 @@
+body {
+  font-size: 18px;
+  font-family: "PT Sans Regular";
+  color: #525252; }
+
+body p {
+  text-align: left; }
+
+.container {
+  width: 930px;
+  margin: 0px auto; }
+
+.grey-block {
+  background-color: #f6f6f6;
+  padding-top: 40px;
+  padding-bottom: 60px; }
+
+#menu-bar {
+  margin-bottom: 15px;
+  height: 45px; }
+
+#aws-logo {
+  float: left; }
+
+#podio-logo {
+  float: right; }
+
+.introduction {
+  text-align: center; }
+
+#rocket-image {
+  display: inline-block;
+  margin-right: 45px; }
+
+#main-message {
+  display: inline-block;
+  width: 408px; }
+
+#main-message-title {
+  font-size: 30px; }
+
+#input-box {
+  font-size: 16px;
+  color: #AAAAAA;
+  height: 30px;
+  border-color: #AAAAAA; }
+
+#sign-in-button {
+  font-size: 16px;
+  font-weight: bolder;
+  height: 30px;
+  background-color: #5AC85B;
+  color: #FFFFFF; }
+
+.white-block {
+  background-color: #FFFFFF;
+  height: 245px;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+#testimony-block {
+  padding: 0px 30px; }
+
+#testimony-image {
+  float: left;
+  margin-left: 30px;
+  margin-right: 55px; }
+
+#testimony-text-block {
+  font-size: 20px; }
+
+#testimony-guy {
+  font-size: 14px;
+  color: #999999; }
+
+.grey-block-2 {
+  background-color: #f6f6f6;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.block-presentation {
+  margin-bottom: 100px; }
+
+.grey-block-2 img {
+  display: inline-block;
+  width: 380px; }
+
+.presentation-text-block {
+  display: inline-block;
+  width: 450px; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";EAEE,WAAW,EAAE,iBAAiB;EAC9B,GAAG,EAAE,+CAA+C",
+"sources": ["special-fonts.sass"],
+"names": [],
+"file": "special-fonts.css"
+}
