@@ -1,16 +1,18 @@
 body {
   font-size: 18px;
   font-family: "PT Sans Regular";
+  line-height: 1.5;
   color: #525252; }
 
 body p {
-  text-align: left; }
+  text-align: left;
+  font-weight: 100; }
 
 .container {
   width: 930px;
   margin: 0px auto; }
 
-.grey-block {
+#intro-signup-block {
   background-color: #f6f6f6;
   padding-top: 40px;
   padding-bottom: 60px; }
@@ -25,7 +27,7 @@ body p {
 #podio-logo {
   float: right; }
 
-.introduction {
+.image-message-block {
   text-align: center; }
 
 #rocket-image {
@@ -34,31 +36,40 @@ body p {
 
 #main-message {
   display: inline-block;
-  width: 408px; }
+  width: 408px;
+  vertical-align: top; }
 
 #main-message-title {
   font-size: 30px; }
 
+.bold-text {
+  font-family: "PT Sans Bold"; }
+
 #input-box {
   font-size: 16px;
   color: #AAAAAA;
-  height: 30px;
-  border-color: #AAAAAA; }
+  height: 40px;
+  width: 305px;
+  border: 1.5px solid #e7e7e7;
+  border-radius: 5px; }
 
 #sign-in-button {
   font-size: 16px;
   font-weight: bolder;
-  height: 30px;
+  height: 45px;
   background-color: #5AC85B;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  border: 1px solid #AAAAAA;
+  border-radius: 5px; }
 
-.white-block {
+.white-block-60 {
   background-color: #FFFFFF;
-  height: 245px;
-  padding-top: 60px;
-  padding-bottom: 60px; }
+  padding: 60px 0px; }
 
 #testimony-block {
+  height: 245px; }
+
+#testimony-image-text {
   padding: 0px 30px; }
 
 #testimony-image {
@@ -66,27 +77,100 @@ body p {
   margin-left: 30px;
   margin-right: 55px; }
 
-#testimony-text-block {
+#testimony-text {
   font-size: 20px; }
 
 #testimony-guy {
   font-size: 14px;
   color: #999999; }
 
-.grey-block-2 {
+.grey-block-100 {
   background-color: #f6f6f6;
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding: 100px 0px; }
 
-.block-presentation {
+.space-beneath {
   margin-bottom: 100px; }
 
-.grey-block-2 img {
+.grey-block-100 img {
   display: inline-block;
   width: 380px; }
 
 .presentation-text-block {
   display: inline-block;
-  width: 450px; }
+  width: 450px;
+  vertical-align: top; }
+
+.presentation-text-block h1 {
+  font-family: "PT Sans Bold";
+  font-size: 24px;
+  padding-bottom: 10px; }
+
+.space-after {
+  padding-right: 73px; }
+
+#companies-logos-block {
+  height: 245px; }
+
+#podio-users {
+  text-align: center; }
+
+#podio-users p {
+  color: #999999;
+  margin-bottom: 40px;
+  text-align: center; }
+
+#podio-users-logos img {
+  display: inline-block;
+  padding: 40px; }
+
+#quote-signup-block {
+  text-align: center; }
+
+#quote-signup-block h2 {
+  margin-bottom: 40px;
+  font-family: "PT Sans Italic"; }
+
+#quoter_name {
+  font-family: "PT Sans Regular"; }
+
+#three-columns-question-answers {
+  font-size: 16px; }
+
+#three-columns-question-answers h2 {
+  margin-bottom: 40px; }
+
+.question-block {
+  display: inline-block;
+  width: 256px;
+  vertical-align: top; }
+
+.question-block p:first-of-type {
+  font-family: "PT Sans Bold";
+  padding-bottom: 20px; }
+
+.question-block a:link {
+  font-family: "PT Sans Bold";
+  color: #525252;
+  text-decoration: none; }
+
+.question-block a:visited {
+  color: #525252; }
+
+.space-after-70px {
+  margin-right: 70px; }
+
+#footer {
+  height: 60px;
+  background-color: #f6f6f6;
+  padding-top: 20px; }
+
+#footer a {
+  font-family: Arial;
+  font-size: 12px;
+  color: #777777;
+  margin-right: 35px; }
+
+#footer img {
+  float: right; }
 
 /*# sourceMappingURL=index.css.map */

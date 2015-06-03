@@ -18,32 +18,33 @@
 
 <body>
 
-    <div class="grey-block">
+    <div id="intro-signup-block">
         <div class="container">
+
             <div id="menu-bar">
                 <img id="aws-logo" src="assets/aws_logo.png" />
                 <img id="podio-logo" src="assets/podio-logo.png" />
             </div>
 
-            <div class="introduction">
+            <div class="image-message-block">
                 <img id="rocket-image" src="assets/image_1.png"/>
 
                 <div id="main-message">
                     <p id="main-message-title">Take your startup to the next level, with Podio.</p>
                     <p> Thousands of startup companies use Podio to communicate, organize and get work done.
-                        As a part of AWS Activate, you can too – for free!</p>
-                    <input id="input-box" type="text" name=""><input id="sign-in-button" type="submit" value="Sign up">
+                        As a part of AWS Activate, you can too – <span class="bold-text">for free!</span></p>
+                    <div class="stylish-sign-in"><input id="input-box" type="text" name=""><input id="sign-in-button" type="submit" value="Sign up"></div>
                 </div>
-
             </div>
         </div>
     </div>
 
-    <div class="white-block">
+
+    <div id="testimony-block" class="white-block-60">
         <div class="container">
-            <div id="testimony-block">
+            <div id="testimony-image-text">
                 <img id="testimony-image" src="assets/image_2.png"/>
-                <p id="testimony-text-block">“One of the things Podio has helped us do is actually kill
+                <p id="testimony-text">“One of the things Podio has helped us do is actually kill
                     those spreadsheets that are lying around in all corners and folders of everyone’s laptops...
                     Kill those spreadsheets and collect everything in a viral, social environment.”</p>
                     <p id="testimony-guy"> Søren Halskov Nissen, CEO, Drivr </p>
@@ -52,12 +53,13 @@
         </div>
     </div>
 
-    <div class="grey-block-2">
+
+    <div id="presentation-text-image-2-columns" class="grey-block-100">
         <div class="container">
 
-            <div class="block-presentation">
-                <div class="presentation-text-block">
-                    <p>Support your growth</p>
+            <div class="space-beneath">
+                <div class="presentation-text-block space-after">
+                    <h1>Support your growth</h1>
                     <p id="text-support-growth">As your startup grows, you can avoid needing lots of
                         different tools, simply by extending Podio to different areas of your business
                         – from product development to sales. 3D printing startup Type A Machines have
@@ -68,11 +70,11 @@
             </div>
 
 
-            <div class="block-presentation">
-                <img id="img-stay-organized" src="assets/image_4.png"/>
+            <div class="space-beneath">
+                <img id="img-stay-organized" class="space-after" src="assets/image_4.png"/>
 
                 <div class="presentation-text-block">
-                    <p>Stay organized</p>
+                    <h1>Stay organized</h1>
                     <p id="text-stay-organized">With so much going on, it’s easy for important things to
                         fall between the cracks. Podio handles all the organization of project content,
                         deadlines and responsibilities for you – so you and your team can focus on simply
@@ -82,8 +84,8 @@
             </div>
 
             <div>
-                <div class="presentation-text-block">
-                    <p>Tighten your communications</p>
+                <div class="presentation-text-block space-after">
+                    <h1>Tighten your communications</h1>
                     <p id="text-tight-comm">No matter where you work, your team will always have one place
                         to communicate and share ideas with Podio. Easy-to-use activity streams and chat
                         messaging will save you from time-consuming email threads and keep everyone involved.</p>
@@ -93,11 +95,77 @@
             </div>
 
         </div>
+    </div>
+
+
+    <div id="companies-logos-block" class="white-block-60">
+        <div class="container" id="podio-users">
+            <p>Innovative teams doing great things in Podio</p>
+            <div id="podio-users-logos">
+                <!--i don.t really need this id, i can use "podio-users img" instead-->
+                <img src="assets/socialbakers_logo.png"/><img src="assets/umbraco_logo.png"/>
+                <img src="assets/drivr_logo.png"/><img src="assets/rackspace_logo.png"/>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="quote-signup-block" class="grey-block-100">
+        <div class="container">
+            <h2>“Podio has a mind-blowing system to help you work with other people.”<span id="quoter_name">– Robert Scoble</span></h2>
+            <input id="input-box" type="text" name=""><input id="sign-in-button" type="submit" value="Sign up">
+        </div>
+    </div>
+
+
+    <div id="three-columns-question-answers" class="white-block-60">
+        <div class="container">
+            <h2>Answers to some questions you might have</h2>
+
+            <div class="question-block space-after-70px" id="question-1">
+                <p>Can I invite all our employees for free?</p>
+                <p>Yes, as a part of your membership in AWS Activate we will
+                    give you 6 (12) months use of Podio for free.</p>
+            </div>
+
+            <div class="question-block space-after-70px" id="question-2">
+                <p>What will happen after 6 months?</p>
+                <p>The billing for Podio will start automatically. If you don’t
+                    want to use Podio after a certain period of time, just <a href="">downgrade
+                    your account</a>.</p>
+            </div>
+
+            <div class="question-block" id="question-3">
+                <p>I’m already signed up for Podio, how do I get the 6 (12) months free?</p>
+                <p>We’d love to hear from you and give you the free account.
+                    <a href="">Let us know</a> and include that you’re a member of AWS Activate.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <a href="">About Podio</a>
+            <a href="">Terms & Conditions</a>
+            <a href="">Privacy Policy</a>
+            <img src="assets/citrix-logo.png"/>
+        </div>
+
+    </div>
 
 </body>
 
 
-
-
-
 </html>
+
+<!--define in container the center align center? renounce at some unecessary divs? / could make a center-align class?-->
+<!--the space-after class?-->
+
+
+<!--block users podio - is too large, verufy padding/margin, same testimony, same fisrt-->
+
+<!--grey-block 2: do i need block presentation divs/classes?-->
+
+<!--!! delete the id.s not used-->
+
+<!--can use id only for description, but not used in css?-->

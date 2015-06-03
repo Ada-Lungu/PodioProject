@@ -3,10 +3,13 @@
 body
   font-size: 18px
   font-family: "PT Sans Regular"
+  line-height: 1.5
   color: #525252
 
 body p
   text-align: left
+  font-weight: 100
+
 
 .container
   width: 930px
@@ -14,7 +17,7 @@ body p
   //text-align: center
 
 //first grey block
-.grey-block
+#intro-signup-block
   background-color: rgb(246, 246, 246)
   padding-top: 40px
   padding-bottom: 60px
@@ -30,7 +33,7 @@ body p
 #podio-logo
   float: right
 
-.introduction
+.image-message-block
   //display: inline-block
   text-align: center
 
@@ -41,9 +44,13 @@ body p
 #main-message
   display: inline-block
   width: 408px
+  vertical-align: top
 
 #main-message-title
   font-size: 30px
+
+.bold-text
+  font-family: "PT Sans Bold"
 
 //there is a 20 px margin bottom, but the margin included by the p is 30px, what should I do?
 //is the same 20 px margin for after the second p
@@ -51,27 +58,38 @@ body p
 #input-box
   font-size: 16px
   color: #AAAAAA
-  height: 30px
-  border-color: #AAAAAA
+  height: 40px
+  width: 305px
+  border: 1.5px solid #e7e7e7
+  //color border diff from what tehy say, but more similar to original
+  border-radius: 5px
+
+//.stylish-sign-in
+//  width: 408px
+//
 
 #sign-in-button
   font-size: 16px
   font-weight: bolder
-  height: 30px
+  height: 45px
   background-color: #5AC85B
   color: #FFFFFF
+  border: 1px solid #AAAAAA
+  border-radius: 5px
 
 
-//second white block
+//second block
 
-.white-block
+.white-block-60
   background-color: #FFFFFF
-  height: 245px
-  padding-top: 60px
-  padding-bottom: 60px
-//  i should repace the padding top/bottom
+  padding: 60px 0px
+
 
 #testimony-block
+  height: 245px
+//  i should repace the padding top/bottom
+
+#testimony-image-text
   padding: 0px 30px
   //text-align: center
 
@@ -81,7 +99,7 @@ body p
   margin-left: 30px
   margin-right: 55px
 
-#testimony-text-block
+#testimony-text
   //display: inline-block
   font-size: 20px
 //instead of this, i could have the text-align center in the container
@@ -91,24 +109,121 @@ body p
   color: #999999
 
 
-//grey block 2
+//third block
 
-.grey-block-2
+//#grey-block-2
+//  background-color: rgb(246, 246, 246)
+//  padding: 100px 0px
+
+.grey-block-100
   background-color: rgb(246, 246, 246)
-  padding-top: 100px
-  padding-bottom: 100px
+  padding: 100px 0px
 
-.block-presentation
+.space-beneath
   margin-bottom: 100px
 //could find a better way of adding margin between blocks?
 
-.grey-block-2 img
+.grey-block-100 img
   display: inline-block
   width: 380px
 
 .presentation-text-block
   display: inline-block
   width: 450px
+  vertical-align: top
 
+.presentation-text-block h1
+  font-family: "PT Sans Bold"
+  font-size: 24px
+  padding-bottom: 10px
+//padding 10 or margin 10? - behaves different
+
+//font size 24px or h1 different, why is that?
 //the smartest way of putting the margin 73px between elements
+
+.space-after
+  padding-right: 73px
+
+
+//4th (white) block
+
+#companies-logos-block
+  height: 245px
+
+#podio-users
+  text-align: center
+
+#podio-users p
+  color: #999999
+  margin-bottom: 40px
+  text-align: center
+//why i need to set align center on the p, not on the div?
+
+#podio-users-logos img
+  display: inline-block
+  padding: 40px
+//padding not mentioned
+
+
+//5th block
+
+#quote-signup-block
+  text-align: center
+
+#quote-signup-block h2
+  margin-bottom: 40px
+  font-family: "PT Sans Italic"
+//  i decided the h2 - not mentioned
+
+#quoter_name
+  font-family: "PT Sans Regular"
+//doen not work, the span
+
+
+//6th block
+
+#three-columns-question-answers
+  font-size: 16px
+
+#three-columns-question-answers h2
+  margin-bottom: 40px
+
+.question-block
+  display: inline-block
+  width: 256px
+  vertical-align: top
+
+.question-block p:first-of-type
+  font-family: "PT Sans Bold"
+  // can i declare somewhere bold?
+  padding-bottom: 20px
+
+.question-block a:link
+  font-family: "PT Sans Bold"
+  color: #525252
+  text-decoration: none
+
+.question-block a:visited
+  color: #525252
+
+.space-after-70px
+  margin-right: 70px
+
+
+//footer
+
+#footer
+  height: 60px
+  background-color: rgb(246, 246, 246)
+  padding-top: 20px
+
+#footer a
+  font-family: Arial
+  font-size: 12px
+  color: #777777
+  margin-right: 35px
+
+#footer img
+  float: right
+
 
