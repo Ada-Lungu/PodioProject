@@ -27,7 +27,7 @@ body p {
 #podio-logo {
   float: right; }
 
-.image-message-block {
+.center-in-container {
   text-align: center; }
 
 #rocket-image {
@@ -45,29 +45,30 @@ body p {
 .bold-text {
   font-family: "PT Sans Bold"; }
 
-#input-box {
+.input-box {
   font-size: 16px;
   color: #AAAAAA;
   height: 40px;
   width: 305px;
   border: 1.5px solid #e7e7e7;
-  border-radius: 5px; }
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px; }
 
-#sign-in-button {
+.sign-in-button {
   font-size: 16px;
   font-weight: bolder;
+  width: 103px;
   height: 45px;
+  margin-left: -4px;
   background-color: #5AC85B;
   color: #FFFFFF;
-  border: 1px solid #AAAAAA;
-  border-radius: 5px; }
+  border: 1.5px solid #e7e7e7;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px; }
 
 .white-block-60 {
   background-color: #FFFFFF;
   padding: 60px 0px; }
-
-#testimony-block {
-  height: 245px; }
 
 #testimony-image-text {
   padding: 0px 30px; }
@@ -88,31 +89,32 @@ body p {
   background-color: #f6f6f6;
   padding: 100px 0px; }
 
-.space-beneath {
+.space-beneath-100 {
   margin-bottom: 100px; }
 
-.grey-block-100 img {
+#presentation-text-image-2-columns img {
   display: inline-block;
   width: 380px; }
+
+#presentation-text-image-2-columns {
+  text-align: center; }
 
 .presentation-text-block {
   display: inline-block;
   width: 450px;
-  vertical-align: top; }
+  vertical-align: top;
+  text-align: left; }
 
 .presentation-text-block h1 {
   font-family: "PT Sans Bold";
   font-size: 24px;
   padding-bottom: 10px; }
 
-.space-after {
+.space-after-73 {
   padding-right: 73px; }
 
 #companies-logos-block {
-  height: 245px; }
-
-#podio-users {
-  text-align: center; }
+  min-height: 245px; }
 
 #podio-users p {
   color: #999999;

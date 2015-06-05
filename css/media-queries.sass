@@ -1,0 +1,114 @@
+@import "variables"
+
+@media screen and (max-width: $SMALL_SCREEN)
+
+  body
+    font-size: $sm-p-font-size
+
+  .container
+    width: 722px
+    margin: 0px auto
+    //justify-content: space-around
+
+
+  //first block: intro-sign-up
+
+  #rocket-image
+    margin-right: 0px
+
+  #main-message-title
+    font-size: 30px
+
+  .input-box
+    font-size: $sm-form-text-size
+    max-width: 305px
+  //  do i need max-width? - i think i don't, as the box is smaller than teh container all the time
+
+  .sign-in-button
+    font-size: $sm-form-text-size
+
+
+  //second block: testimony-block
+
+  #testimony-image-text
+    padding: 0px 0px
+    //text-align: center
+
+  #testimony-image
+    //display: inline-block
+    float: left
+    margin-left: 30px
+    margin-right: 20px
+  //  nu se schimba dc schimb margin
+
+  //#testimony-text
+  //  font-size: 22px
+
+  #testimony-guy
+    font-size: 16px
+
+  //third block: presentation-text-image-2-cols
+
+  .grey-block-100
+    background-color: rgb(246, 246, 246)
+    padding: 100px 0px
+
+  .space-beneath-100
+    margin-bottom: 100px
+
+  .presentation-text-block h1
+    font-size: 24px
+
+  .space-after-73
+    padding-right: 0px
+  //  e ok sa fac asta?
+
+  .space-beneath-100
+    margin-bottom: 50px
+  //  or should i keep the same margin bottom = 100?
+
+  .flex-reorder-container
+    display: flex
+    flex-flow: row wrap
+    flex-wrap: wrap
+    justify-content: center
+
+
+  //#stay-organized, #img-stay-organized
+  //  flex: 1 100%
+
+  //#stay-organized
+  //  order: 0
+  //
+  //#img-stay-organized
+  //  order: 2
+
+  .flex-reorder-container img
+    order: 2
+
+//  4th block: companies-logos-block
+
+
+//6th block: three-columns-question-answers
+
+  #three-columns-question-answers
+    font-size: 16px
+
+  .question-block p:first-of-type
+    padding-bottom: 0px
+
+  div#three-columns-question-answers div.center-in-container div.space-after-70px
+    margin-right: 0px
+    background-color: red
+
+//.question-block a:link
+//margin?
+
+
+@media screen and (max-width: $XSMALL_SCREEN)
+
+  #three-columns-question-answers .container
+    width: 300px
+    margin: 0px auto
+
+

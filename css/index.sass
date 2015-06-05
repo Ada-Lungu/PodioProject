@@ -10,13 +10,13 @@ body p
   text-align: left
   font-weight: 100
 
-
 .container
   width: 930px
   margin: 0px auto
   //text-align: center
 
-//first grey block
+
+//first block: intro-sign-up
 #intro-signup-block
   background-color: rgb(246, 246, 246)
   padding-top: 40px
@@ -33,9 +33,11 @@ body p
 #podio-logo
   float: right
 
-.image-message-block
-  //display: inline-block
+.center-in-container
   text-align: center
+
+//.image-message-block
+//  text-align: center
 
 #rocket-image
   display: inline-block
@@ -55,82 +57,77 @@ body p
 //there is a 20 px margin bottom, but the margin included by the p is 30px, what should I do?
 //is the same 20 px margin for after the second p
 
-#input-box
+.input-box
   font-size: 16px
   color: #AAAAAA
   height: 40px
   width: 305px
   border: 1.5px solid #e7e7e7
-  //color border diff from what tehy say, but more similar to original
-  border-radius: 5px
+  //color border diff from what they say, but more similar to original
+  border-bottom-left-radius: 7px
+  border-top-left-radius: 7px
 
 //.stylish-sign-in
 //  width: 408px
-//
 
-#sign-in-button
+.sign-in-button
   font-size: 16px
   font-weight: bolder
+  width: 103px
   height: 45px
+  margin-left: -4px
   background-color: #5AC85B
   color: #FFFFFF
-  border: 1px solid #AAAAAA
-  border-radius: 5px
+  border: 1.5px solid #e7e7e7
+  border-bottom-right-radius: 7px
+  border-top-right-radius: 7px
 
 
-//second block
+//second block: testimony-block
 
 .white-block-60
   background-color: #FFFFFF
   padding: 60px 0px
 
-
-#testimony-block
-  height: 245px
-//  i should repace the padding top/bottom
-
 #testimony-image-text
   padding: 0px 30px
-  //text-align: center
 
 #testimony-image
-  //display: inline-block
   float: left
   margin-left: 30px
   margin-right: 55px
 
 #testimony-text
-  //display: inline-block
   font-size: 20px
-//instead of this, i could have the text-align center in the container
 
 #testimony-guy
   font-size: 14px
   color: #999999
 
 
-//third block
-
-//#grey-block-2
-//  background-color: rgb(246, 246, 246)
-//  padding: 100px 0px
+//third block: presentation-text-image-2-cols
 
 .grey-block-100
   background-color: rgb(246, 246, 246)
   padding: 100px 0px
 
-.space-beneath
+.space-beneath-100
   margin-bottom: 100px
 //could find a better way of adding margin between blocks?
 
-.grey-block-100 img
+#presentation-text-image-2-columns img
   display: inline-block
   width: 380px
+// good enough specificity?
+
+#presentation-text-image-2-columns
+  text-align: center
 
 .presentation-text-block
   display: inline-block
   width: 450px
   vertical-align: top
+  text-align: left
 
 .presentation-text-block h1
   font-family: "PT Sans Bold"
@@ -141,23 +138,27 @@ body p
 //font size 24px or h1 different, why is that?
 //the smartest way of putting the margin 73px between elements
 
-.space-after
+.space-after-73
   padding-right: 73px
 
 
-//4th (white) block
+//4th block: companies-logos-block
 
 #companies-logos-block
-  height: 245px
+  min-height: 245px
 
-#podio-users
-  text-align: center
+//#podio-users
+//  text-align: center
 
 #podio-users p
   color: #999999
   margin-bottom: 40px
   text-align: center
 //why i need to set align center on the p, not on the div?
+//
+
+//#podio-users-logos
+//  text-align: center
 
 #podio-users-logos img
   display: inline-block
@@ -165,7 +166,7 @@ body p
 //padding not mentioned
 
 
-//5th block
+//5th block: quote-signup-block
 
 #quote-signup-block
   text-align: center
@@ -180,10 +181,12 @@ body p
 //doen not work, the span
 
 
-//6th block
+//6th block: three-columns-question-answers
 
 #three-columns-question-answers
   font-size: 16px
+  //text-align: center
+//  is the center-align good here? better in another div?
 
 #three-columns-question-answers h2
   margin-bottom: 40px
@@ -227,3 +230,5 @@ body p
   float: right
 
 
+//do not forget to make buutons a radius larger!
+//make the sign-in box larger only for XSmall screens
