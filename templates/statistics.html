@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Podio Super Duper Analytics</title>
+</head>
+
+<body>
+    <h1>Podio Super Duper Analytics</h1>
+    {% for line in stats_dict %}
+        {{ stats_dict[line] }}
+        {{ line}}
+        <br/>
+    {% endfor %}
+</body>
+
+</html>

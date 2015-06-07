@@ -6,12 +6,20 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Welcome to Podio</title>
+<title>Task Management Application for Start-ups</title>
 <title></title>
 
-<link href="css/index.css" rel="stylesheet"/>
-<link href="css/special-fonts.css" rel="stylesheet"/>
-<link href="css/media-queries.css" rel="stylesheet"/>
+<meta name="description" content="Podio is an online work management application,
+ that brings all the tools you need together. Optimize your work flow, task management
+ and sharing, using personalized features for your business. We offer a 6 months free trial
+ for start-ups, part of the AWS Activate program.">
+<meta name="keyword" content="start-up accelerator, start-up free trial, work management, task management, improve team-work,
+ organize work, better communication, stay organized, project management application">
+
+
+<link href="../static/css/index.css" rel="stylesheet"/>
+<link href="../static/css/special-fonts.css" rel="stylesheet"/>
+<link href="../static/css/media-queries.css" rel="stylesheet"/>
 
 
 </head>
@@ -19,24 +27,37 @@
 
 <body>
 
+
 <!--first block: intro-sign-up-->
     <div id="intro-signup-block">
         <div class="container">
 
-            <div id="menu-bar">
-                <img id="aws-logo" src="assets/aws_logo.png" />
-                <img id="podio-logo" src="assets/podio-logo.png" />
+            <div id="up-logos">
+                <img id="aws-logo" src="../static/assets/aws_logo.png" />
+                <img id="podio-logo" src="../static/assets/podio-logo.png" />
             </div>
 
             <div id="image-message-block" class="center-in-container">
-                <img id="rocket-image" src="assets/image_1.png"/>
+                <img id="rocket-image" src="../static/assets/image_1.png"/>
 
                 <div id="main-message">
-                    <p id="main-message-title">Take your startup to the next level, with Podio.</p>
+                    <h1 id="main-message-title">{{message}}</h1>
                     <p>Thousands of startup companies use Podio to communicate, organize and get work done.
                         As a part of AWS Activate, you can too – <span class="bold-text">for free!</span></p>
-                    <div class="stylish-sign-in"><input class="input-box" type="text" name="" placeholder="Enter your work email address"><input class="sign-in-button" type="submit" value="Sign up"></div>
-                        <!--<input data-value="emailfield" name="commit" type="submit" value="Kostenlos anmelden">-->
+
+                    <form accept-charset="UTF-8" action="/signup?force_locale=en_US"
+                          data-conversion-group="signup"
+                          data-tracking="SignUp,Sendverification,new_content_site"
+                          method="post">
+
+                        <div style="display:none">
+                            <input name="utf8" type="hidden" value="✓">
+                            <input name="authenticity_token" type="hidden" value="c5c4a169+V7euMD/QN/LityuW71tnPutLibQ2oc2+ZA="></div>
+                            <input id="force_locale" name="force_locale" type="hidden" value="en_US">
+                            <input name="message" type="hidden" value="{{message}}">
+                            <input name="used-form" type="hidden" value="top-form">
+                            <input class="input-box" name="user[mail]" placeholder="Enter your work email" required="required" type="email"><input class="sign-in-button" data-value="emailfield" name="commit" type="submit" value="Sign up">
+                    </form>
                 </div>
             </div>
         </div>
@@ -47,11 +68,13 @@
     <div id="testimony-block" class="white-block-60">
         <div class="container">
             <div id="testimony-image-text">
-                <img id="testimony-image" src="assets/image_2.png"/>
+                <div>
+                    <img id="testimony-image" src="../static/assets/image_2.png"/>
+                </div>
                 <p id="testimony-text">“One of the things Podio has helped us do is actually kill
                     those spreadsheets that are lying around in all corners and folders of everyone’s laptops...
                     Kill those spreadsheets and collect everything in a viral, social environment.”<br/>
-                    <span id="testimony-guy"> Søren Halskov Nissen, CEO, Drivr </span></p>
+                    <span id="testimony-author"> Søren Halskov Nissen, CEO, Drivr </span></p>
             </div>
 
         </div>
@@ -59,27 +82,27 @@
 
 
 <!--third block: presentation-text-image-2-cols-->
-    <div id="presentation-text-image-2-columns" class="grey-block-100">
+    <div id="two-columns-with-text-image" class="grey-block-100">
         <div class="container">
 
             <div id="support-growth" class="space-beneath-100">
                 <div class="presentation-text-block space-after-73">
-                    <h1>Support your growth</h1>
+                    <h2>Support your growth</h2>
                     <p>As your startup grows, you can avoid needing lots of
                         different tools, simply by extending Podio to different areas of your business
                         – from product development to sales. 3D printing startup Type A Machines have
                         customized Podio to run their entire operation.</p>
                 </div>
 
-                <a href="https://www.youtube.com/watch?v=FBjsA­loPQo."><img id="video-support-growth" src="assets/image_3.png"/></a>
+                <iframe width="380" height="255" src="https://www.youtube.com/embed/FBjsA-loPQo" frameborder="0" allowfullscreen></iframe>
             </div>
 
 
             <div id="stay-organized" class="space-beneath-100 flex-reorder-container">
-                <img id="img-stay-organized" class="space-after-73" src="assets/image_4.png"/>
+                <img class="space-after-73" src="../static/assets/image_4.png"/>
 
                 <div class="presentation-text-block">
-                    <h1>Stay organized</h1>
+                    <h2>Stay organized</h2>
                     <p>With so much going on, it’s easy for important things to
                         fall between the cracks. Podio handles all the organization of project content,
                         deadlines and responsibilities for you – so you and your team can focus on simply
@@ -91,13 +114,13 @@
 
             <div id="tighten-communications">
                 <div class="presentation-text-block space-after-73">
-                    <h1>Tighten your communications</h1>
+                    <h2>Tighten your communications</h2>
                     <p>No matter where you work, your team will always have one place
                         to communicate and share ideas with Podio. Easy-to-use activity streams and chat
                         messaging will save you from time-consuming email threads and keep everyone involved.</p>
                 </div>
 
-                <img id="img-text-tight-comm" src="assets/image_5.png">
+                <img src="../static/assets/image_5.png">
             </div>
 
         </div>
@@ -109,9 +132,8 @@
         <div id="podio-users" class="container center-in-container">
             <p>Innovative teams doing great things in Podio</p>
             <div id="podio-users-logos" class="center-in-container">
-                <!--i don.t really need this id, i can use "podio-users img" instead-->
-                <img src="assets/socialbakers_logo.png"/><img src="assets/umbraco_logo.png"/>
-                <img src="assets/drivr_logo.png"/><img src="assets/rackspace_logo.png"/>
+                <img src="../static/assets/socialbakers_logo.png"/><img src="../static/assets/umbraco_logo.png"/>
+                <img src="../static/assets/drivr_logo.png"/><img src="../static/assets/rackspace_logo.png"/>
             </div>
         </div>
     </div>
@@ -120,31 +142,43 @@
 <!--5th block: quote-signup-block-->
     <div id="quote-signup-block" class="grey-block-100">
         <div class="container">
-            <h2>“Podio has a mind-blowing system to help you work with other people.”<span id="quoter_name">– Robert Scoble</span></h2>
-            <input class="input-box" type="text" name=""><input class="sign-in-button" type="submit" value="Sign up">
+            <p>“Podio has a mind-blowing system to help you work with other people.”<span id="quoter_name">– Robert Scoble</span></p>
+            <form accept-charset="UTF-8" action="/signup?force_locale=en_US"
+                  data-conversion-group="signup"
+                  data-tracking="SignUp,Sendverification,new_content_site"
+                  method="post">
+
+                <div style="display:none">
+                    <input name="utf8" type="hidden" value="✓">
+                    <input name="authenticity_token" type="hidden" value="c5c4a169+V7euMD/QN/LityuW71tnPutLibQ2oc2+ZA="></div>
+                    <input id="force_locale" name="force_locale" type="hidden" value="en_US">
+                    <input name="message" type="hidden" value="{{message}}">
+                    <input name="used-form" type="hidden" value="bottom-form">
+                    <input class="input-box" name="user[mail]" placeholder="Enter your work email" required="required" type="email"><input class="sign-in-button" data-value="emailfield" name="commit" type="submit" value="Sign up">
+            </form>
         </div>
     </div>
 
 
 <!--6th block: three-columns-question-answers-->
     <div id="three-columns-question-answers" class="white-block-60">
-        <div class="center-in-container" class="container">
+        <div class="container center-in-container">
             <h2>Answers to some questions you might have</h2>
 
-            <div class="question-block space-after-70px">
+            <div class="question-block">
                 <p>Can I invite all our employees for free?</p>
                 <p>Yes, as a part of your membership in AWS Activate we will
                     give you 6 (12) months use of Podio for free.</p>
             </div>
 
-            <div class="question-block space-after-70px">
+            <div class="question-block">
                 <p>What will happen after 6 months?</p>
                 <p>The billing for Podio will start automatically. If you don’t
                     want to use Podio after a certain period of time, just <a href="">downgrade
                     your account</a>.</p>
             </div>
 
-            <div class="question-block">
+            <div class="question-block no-right-margin">
                 <p>I’m already signed up for Podio, how do I get the 6 (12) months free?</p>
                 <p>We’d love to hear from you and give you the free account.
                     <a href="">Let us know</a> and include that you’re a member of AWS Activate.</p>
@@ -159,7 +193,7 @@
             <a href="">About Podio</a>
             <a href="">Terms & Conditions</a>
             <a href="">Privacy Policy</a>
-            <img src="assets/citrix-logo.png"/>
+            <img src="../static/assets/citrix-logo.png"/>
         </div>
 
     </div>
@@ -169,14 +203,6 @@
 
 </html>
 
-<!--define in container the center align center? renounce at some unecessary divs? / could make a center-align class?-->
-<!--the space-after class?-->
 
 
-<!--block users podio - is too large, verufy padding/margin, same testimony, same fisrt-->
 
-<!--grey-block 2: do i need block presentation divs/classes?-->
-
-<!--!! delete the id.s not used-->
-
-<!--can use id only for description, but not used in css?-->

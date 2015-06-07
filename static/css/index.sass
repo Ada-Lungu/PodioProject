@@ -2,7 +2,7 @@
 
 body
   font-size: 18px
-  font-family: "PT Sans Regular"
+  font-family: "PT Sans"
   line-height: 1.5
   color: #525252
 
@@ -13,17 +13,16 @@ body p
 .container
   width: 930px
   margin: 0px auto
-  //text-align: center
 
 
 //first block: intro-sign-up
+
 #intro-signup-block
   background-color: rgb(246, 246, 246)
   padding-top: 40px
   padding-bottom: 60px
-  //text-align: center
 
-#menu-bar
+#up-logos
   margin-bottom: 15px
   height: 45px
 
@@ -36,9 +35,6 @@ body p
 .center-in-container
   text-align: center
 
-//.image-message-block
-//  text-align: center
-
 #rocket-image
   display: inline-block
   margin-right: 45px
@@ -50,12 +46,11 @@ body p
 
 #main-message-title
   font-size: 30px
+  font-weight: normal
+  text-align: left
 
 .bold-text
-  font-family: "PT Sans Bold"
-
-//there is a 20 px margin bottom, but the margin included by the p is 30px, what should I do?
-//is the same 20 px margin for after the second p
+  font-weight: bold
 
 .input-box
   font-size: 16px
@@ -63,16 +58,13 @@ body p
   height: 40px
   width: 305px
   border: 1.5px solid #e7e7e7
-  //color border diff from what they say, but more similar to original
+  //note: color border diff from what suggested, but more similar to original
   border-bottom-left-radius: 7px
   border-top-left-radius: 7px
 
-//.stylish-sign-in
-//  width: 408px
-
 .sign-in-button
   font-size: 16px
-  font-weight: bolder
+  font-weight: bold
   width: 103px
   height: 45px
   margin-left: -4px
@@ -100,7 +92,7 @@ body p
 #testimony-text
   font-size: 20px
 
-#testimony-guy
+#testimony-author
   font-size: 14px
   color: #999999
 
@@ -113,14 +105,12 @@ body p
 
 .space-beneath-100
   margin-bottom: 100px
-//could find a better way of adding margin between blocks?
 
-#presentation-text-image-2-columns img
+#two-columns-with-text-image img
   display: inline-block
   width: 380px
-// good enough specificity?
 
-#presentation-text-image-2-columns
+#two-columns-with-text-image
   text-align: center
 
 .presentation-text-block
@@ -129,14 +119,13 @@ body p
   vertical-align: top
   text-align: left
 
-.presentation-text-block h1
-  font-family: "PT Sans Bold"
+.presentation-text-block h2
+  font-weight: bold
   font-size: 24px
-  padding-bottom: 10px
-//padding 10 or margin 10? - behaves different
+  margin-bottom: 10px
 
-//font size 24px or h1 different, why is that?
-//the smartest way of putting the margin 73px between elements
+.presentation-text-block p
+  margin: 0px
 
 .space-after-73
   padding-right: 73px
@@ -147,23 +136,15 @@ body p
 #companies-logos-block
   min-height: 245px
 
-//#podio-users
-//  text-align: center
-
 #podio-users p
   color: #999999
   margin-bottom: 40px
   text-align: center
-//why i need to set align center on the p, not on the div?
-//
-
-//#podio-users-logos
-//  text-align: center
 
 #podio-users-logos img
   display: inline-block
   padding: 40px
-//padding not mentioned
+//note: padding not mentioned
 
 
 //5th block: quote-signup-block
@@ -171,46 +152,50 @@ body p
 #quote-signup-block
   text-align: center
 
-#quote-signup-block h2
+#quote-signup-block p
   margin-bottom: 40px
-  font-family: "PT Sans Italic"
-//  i decided the h2 - not mentioned
+  font-style: italic
+  font-size: 26px
+//note:  i decided the h2 - not mentioned
 
 #quoter_name
-  font-family: "PT Sans Regular"
-//doen not work, the span
+  font-style: normal
 
 
 //6th block: three-columns-question-answers
 
 #three-columns-question-answers
   font-size: 16px
-  //text-align: center
-//  is the center-align good here? better in another div?
 
 #three-columns-question-answers h2
   margin-bottom: 40px
+  text-align: left
+  font-weight: normal
 
 .question-block
   display: inline-block
   width: 256px
   vertical-align: top
+  margin-right: 70px
 
 .question-block p:first-of-type
-  font-family: "PT Sans Bold"
-  // can i declare somewhere bold?
+  font-weight: bold
+  margin: 0px
   padding-bottom: 20px
 
+.question-block p
+  margin: 0px
+
 .question-block a:link
-  font-family: "PT Sans Bold"
+  font-weight: bold
   color: #525252
   text-decoration: none
 
 .question-block a:visited
   color: #525252
 
-.space-after-70px
-  margin-right: 70px
+.no-right-margin
+  margin-right: 0px
 
 
 //footer
@@ -230,5 +215,3 @@ body p
   float: right
 
 
-//do not forget to make buutons a radius larger!
-//make the sign-in box larger only for XSmall screens

@@ -10,7 +10,7 @@
     margin-right: 0px; }
 
   #main-message-title {
-    font-size: 30px; }
+    font-size: 32px; }
 
   .input-box {
     font-size: 18px;
@@ -27,23 +27,23 @@
     margin-left: 30px;
     margin-right: 20px; }
 
-  #testimony-guy {
+  #testimony-author {
     font-size: 16px; }
 
   .grey-block-100 {
     background-color: #f6f6f6;
     padding: 100px 0px; }
 
-  .space-beneath-100 {
-    margin-bottom: 100px; }
-
-  .presentation-text-block h1 {
-    font-size: 24px; }
+  .presentation-text-block h2 {
+    font-size: 26px; }
 
   .space-after-73 {
     padding-right: 0px; }
 
   .space-beneath-100 {
+    margin-bottom: 60px; }
+
+  #support-growth .presentation-text-block, #tighten-communications .presentation-text-block {
     margin-bottom: 50px; }
 
   .flex-reorder-container {
@@ -53,8 +53,47 @@
     justify-content: center; }
 
   .flex-reorder-container img {
-    order: 2; } }
+    order: 2;
+    margin-top: 50px; }
+
+  #three-columns-question-answers {
+    font-size: 16px; }
+
+  #three-columns-question-answers h2 {
+    text-align: center; }
+
+  .question-block p:first-of-type {
+    padding-bottom: 0px; }
+
+  .question-block {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px; } }
 @media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0px auto; }
+
+  .sign-in-button {
+    height: 60px; }
+
+  .input-box {
+    height: 60px; }
+
+  body a:link {
+    padding: 20px 0px; }
+
+  #testimony-image-text {
+    text-align: center; }
+
+  #testimony-image {
+    float: none;
+    display: inline-block; }
+
+  #testimony-text {
+    display: inline-block;
+    clear: left; }
+
   #three-columns-question-answers .container {
     width: 300px;
     margin: 0px auto; } }

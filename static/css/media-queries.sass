@@ -8,8 +8,6 @@
   .container
     width: 722px
     margin: 0px auto
-    //justify-content: space-around
-
 
   //first block: intro-sign-up
 
@@ -17,12 +15,11 @@
     margin-right: 0px
 
   #main-message-title
-    font-size: 30px
+    font-size: $sm-h1-size
 
   .input-box
     font-size: $sm-form-text-size
     max-width: 305px
-  //  do i need max-width? - i think i don't, as the box is smaller than teh container all the time
 
   .sign-in-button
     font-size: $sm-form-text-size
@@ -35,17 +32,13 @@
     //text-align: center
 
   #testimony-image
-    //display: inline-block
     float: left
     margin-left: 30px
     margin-right: 20px
-  //  nu se schimba dc schimb margin
 
-  //#testimony-text
-  //  font-size: 22px
-
-  #testimony-guy
+  #testimony-author
     font-size: 16px
+
 
   //third block: presentation-text-image-2-cols
 
@@ -53,19 +46,17 @@
     background-color: rgb(246, 246, 246)
     padding: 100px 0px
 
-  .space-beneath-100
-    margin-bottom: 100px
-
-  .presentation-text-block h1
-    font-size: 24px
+  .presentation-text-block h2
+    font-size: $sm-h2-size
 
   .space-after-73
     padding-right: 0px
-  //  e ok sa fac asta?
 
   .space-beneath-100
+    margin-bottom: 60px
+
+  #support-growth .presentation-text-block, #tighten-communications .presentation-text-block
     margin-bottom: 50px
-  //  or should i keep the same margin bottom = 100?
 
   .flex-reorder-container
     display: flex
@@ -73,42 +64,57 @@
     flex-wrap: wrap
     justify-content: center
 
-
-  //#stay-organized, #img-stay-organized
-  //  flex: 1 100%
-
-  //#stay-organized
-  //  order: 0
-  //
-  //#img-stay-organized
-  //  order: 2
-
   .flex-reorder-container img
     order: 2
+    margin-top: 50px
 
-//  4th block: companies-logos-block
-
-
-//6th block: three-columns-question-answers
+  //6th block: three-columns-question-answers
 
   #three-columns-question-answers
     font-size: 16px
 
+  #three-columns-question-answers h2
+    text-align: center
+
   .question-block p:first-of-type
     padding-bottom: 0px
 
-  div#three-columns-question-answers div.center-in-container div.space-after-70px
-    margin-right: 0px
-    background-color: red
-
-//.question-block a:link
-//margin?
+  .question-block
+    margin-left: 20px
+    margin-right: 20px
+    margin-bottom: 30px
 
 
 @media screen and (max-width: $XSMALL_SCREEN)
 
+  .container
+    width: 100%
+    margin: 0px auto
+
+  .sign-in-button
+    height: $xs-input-box-height
+
+  .input-box
+    height: $xs-input-box-height
+
+  body a:link
+    padding: 20px 0px
+
+  //second block: testimony-block
+
+  #testimony-image-text
+    text-align: center
+
+  #testimony-image
+    float: none
+    display: inline-block
+
+  #testimony-text
+    display: inline-block
+    clear: left
+
+  //6th block: three-columns-question-answers
+
   #three-columns-question-answers .container
     width: 300px
     margin: 0px auto
-
-

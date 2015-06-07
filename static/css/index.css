@@ -1,6 +1,6 @@
 body {
   font-size: 18px;
-  font-family: "PT Sans Regular";
+  font-family: "PT Sans";
   line-height: 1.5;
   color: #525252; }
 
@@ -17,7 +17,7 @@ body p {
   padding-top: 40px;
   padding-bottom: 60px; }
 
-#menu-bar {
+#up-logos {
   margin-bottom: 15px;
   height: 45px; }
 
@@ -40,10 +40,12 @@ body p {
   vertical-align: top; }
 
 #main-message-title {
-  font-size: 30px; }
+  font-size: 30px;
+  font-weight: normal;
+  text-align: left; }
 
 .bold-text {
-  font-family: "PT Sans Bold"; }
+  font-weight: bold; }
 
 .input-box {
   font-size: 16px;
@@ -56,7 +58,7 @@ body p {
 
 .sign-in-button {
   font-size: 16px;
-  font-weight: bolder;
+  font-weight: bold;
   width: 103px;
   height: 45px;
   margin-left: -4px;
@@ -81,7 +83,7 @@ body p {
 #testimony-text {
   font-size: 20px; }
 
-#testimony-guy {
+#testimony-author {
   font-size: 14px;
   color: #999999; }
 
@@ -92,11 +94,11 @@ body p {
 .space-beneath-100 {
   margin-bottom: 100px; }
 
-#presentation-text-image-2-columns img {
+#two-columns-with-text-image img {
   display: inline-block;
   width: 380px; }
 
-#presentation-text-image-2-columns {
+#two-columns-with-text-image {
   text-align: center; }
 
 .presentation-text-block {
@@ -105,10 +107,13 @@ body p {
   vertical-align: top;
   text-align: left; }
 
-.presentation-text-block h1 {
-  font-family: "PT Sans Bold";
+.presentation-text-block h2 {
+  font-weight: bold;
   font-size: 24px;
-  padding-bottom: 10px; }
+  margin-bottom: 10px; }
+
+.presentation-text-block p {
+  margin: 0px; }
 
 .space-after-73 {
   padding-right: 73px; }
@@ -128,38 +133,46 @@ body p {
 #quote-signup-block {
   text-align: center; }
 
-#quote-signup-block h2 {
+#quote-signup-block p {
   margin-bottom: 40px;
-  font-family: "PT Sans Italic"; }
+  font-style: italic;
+  font-size: 26px; }
 
 #quoter_name {
-  font-family: "PT Sans Regular"; }
+  font-style: normal; }
 
 #three-columns-question-answers {
   font-size: 16px; }
 
 #three-columns-question-answers h2 {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  text-align: left;
+  font-weight: normal; }
 
 .question-block {
   display: inline-block;
   width: 256px;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-right: 70px; }
 
 .question-block p:first-of-type {
-  font-family: "PT Sans Bold";
+  font-weight: bold;
+  margin: 0px;
   padding-bottom: 20px; }
 
+.question-block p {
+  margin: 0px; }
+
 .question-block a:link {
-  font-family: "PT Sans Bold";
+  font-weight: bold;
   color: #525252;
   text-decoration: none; }
 
 .question-block a:visited {
   color: #525252; }
 
-.space-after-70px {
-  margin-right: 70px; }
+.no-right-margin {
+  margin-right: 0px; }
 
 #footer {
   height: 60px;
