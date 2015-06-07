@@ -62,9 +62,6 @@
   #three-columns-question-answers h2 {
     text-align: center; }
 
-  .question-block p:first-of-type {
-    padding-bottom: 0px; }
-
   .question-block {
     margin-left: 20px;
     margin-right: 20px;
@@ -84,6 +81,7 @@
     padding: 20px 0px; }
 
   #testimony-image-text {
+    padding: 0px 30px;
     text-align: center; }
 
   #testimony-image {
@@ -93,6 +91,9 @@
   #testimony-text {
     display: inline-block;
     clear: left; }
+
+  #quote-signup-block p {
+    padding: 0px 30px; }
 
   #three-columns-question-answers .container {
     width: 300px;
